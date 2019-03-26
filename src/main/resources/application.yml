@@ -1,14 +1,12 @@
 spring:
   application:
     name: inventory-service
-server:
-  port: 8180
 eureka:
   client:
-    service-url:
-      default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
-    prefer-ip-address: true
+    preferIpAddress: true
 management:
   endpoints:
     web:
